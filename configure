@@ -2,7 +2,7 @@
 
 VERSION=3.8
 prefix=/usr/local
-configured_profiles=
+configured_profiles="net_4_0 net_4_5"
 moonlight_sdk_location=
 monotouch_sdk_location="`pwd`/../mono/mcs/class/lib/monotouch"
 monodroid_sdk_location="`pwd`/../mono/mcs/class/lib/monodroid"
@@ -40,6 +40,7 @@ while test x$1 != x; do
         esac
         shift
 done
+
 
 if test "x$moonlight_sdk_location" = "x"; then
 	if test "x`echo $configured_profiles | grep moonlight`" != "x"; then
